@@ -3,16 +3,17 @@ import streamlit as st
 
 #Step 1: Header First (Text Elements)
 
-st.title("Course Management")
-st.header("Course Management Dashboard")
-st.caption("MISY350")
+st.title("Course Manager")
+st.header("Course Assignments Manager")
+st.subheader("Course Assignments Manager")
+
 st.divider()
 
 #Step 2: Define Assignments List (Data Continuity)
 assignments =[
     {
         "id" : "HW1",
-        "title" : "Introduction to Database",
+        "title" : "Intro to Database",
         "description": "basics of database design",
         "points" : 100,
         "type" : "homework"
@@ -26,6 +27,7 @@ assignments =[
     }
 ]
  #3. Step 3: Add New Assignment Section (Inputs & Layout)
+
 st.subheader("Add New Assignmnet")
 with st.container(border=True):
     col1,col2 = st.columns([2,1])
@@ -33,7 +35,7 @@ with st.container(border=True):
     with col1:
         with st.container(border=True):
             st.markdown("### Assignment Details")
-            title = st.text_input("Assignmnet title",placeholder="homework")
+            title = st.text_input("Assignmnet title",placeholder="homework1", help="Enter the title of the assignment")
             description = st.text_input("Assignment Description")
             points = st.number_input("Points")
     with col2:
