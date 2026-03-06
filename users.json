@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "email": "admin@school.edu",
+    "full_name": "System Admin",
+    "password": "123ssag@43AE",
+    "role": "Admin",
+    "registered_at": "2026-03-06 11:45:35.386114"
+  },
+  {
+    "id": "509bc2d3-03fb-4786-8685-101b0719bd7e",
+    "email": "dongyimeng278@gmail.com",
+    "full_name": "Nikki",
+    "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+    "role": "Instructor",
+    "registered_at": "2026-03-06 12:17:45.788311"
+  },
+  {
+    "id": "fc1b4fbf-30d6-4d02-926a-90d340848319",
+    "email": "dongyimeng278@gmail.com",
+    "full_name": "Nikki Dong",
+    "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+    "role": "Instructor",
+    "registered_at": "2026-03-06 12:20:08.761313"
+  },
+  {
+    "id": "12e8d0ee-c676-42ac-9ebc-db918105cf50",
+    "email": "dongyimeng278@gmail.com",
+    "full_name": "Nikki Dong",
+    "password": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+    "role": "Instructor",
+    "registered_at": "2026-03-06 12:23:41.314820"
+  }
+]

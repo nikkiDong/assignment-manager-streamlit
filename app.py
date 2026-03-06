@@ -1,44 +1,46 @@
 import streamlit as st
 
-
-#Step 1: Header First (Text Elements)
-
+#1. Step 1: Header First (Text Elements)
 st.title("Course Manager")
-st.header("Course Assignments Manager")
-st.subheader("Course Assignments Manager")
+st.header("Course Assignmnets Manager")
+st.subheader("Course Assignmnets Manager")
 
 st.divider()
 
-#Step 2: Define Assignments List (Data Continuity)
-assignments =[
+#2. Step 2: Define Assignments List (Data Continuity)
+
+assignments = [
     {
         "id" : "HW1",
-        "title" : "Intro to Database",
-        "description": "basics of database design",
+        "title": "Intro to Database",
+        "description" : "basics of database design",
+        "points": 100,
+        "type" : "homework"
+    } ,
+    {
+        "id" : "HW2",
+        "title" : "Normalization",
+        "description" : "normalizing",
         "points" : 100,
         "type" : "homework"
-    },
-    {
-        "id": "HW2",
-        "title": "Normalization",
-        "description" : "Normalize the table designs",
-        "points": 100,
-        "type" : "lab"
     }
 ]
- #3. Step 3: Add New Assignment Section (Inputs & Layout)
 
+#3. Step 3: Add New Assignment Section (Inputs & Layout)
+#col1,col2 = st.columns(2) ---> this will give you 50%- 50%
 st.subheader("Add New Assignmnet")
+
 with st.container(border=True):
+
     col1,col2 = st.columns([2,1])
+    # col1,col2,col3 = st.columns([1,6,1])
 
     with col1:
         with st.container(border=True):
-            st.markdown("### Assignment Details")
-            title = st.text_input("Assignmnet title",placeholder="homework1", help="Enter the title of the assignment")
-            description = st.text_input("Assignment Description")
-            points = st.number_input("Points")
+            st.markdown("### Assignmnet Details")
+            title = st.text_input("Assignment title",placeholder="homework1",help="enter a short name")
+            description = st.text_area("Assignmnet Description",placeholder= "ex. details...")
+
     with col2:
-        st.markdown("**Time and Type**")
+        st.markdown("**Due Date Selection**")
         due_date = st.date_input("Due Date")
-        type = st.radio("type",["Homework","Lab"])
